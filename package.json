@@ -1,0 +1,38 @@
+{
+  "name": "react-native-chip-input",
+  "version": "1.0.0",
+  "description": "This is like material-ui-chip-input for react native",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gayathri-perumal/react-native-chip-input.git"
+  },
+  "keywords": [
+    "react native",
+    "react",
+    "native",
+    "chip input",
+    "chips",
+    "multiple input",
+    "array input",
+    "gmail input",
+    "email input",
+    "gmail to address input",
+    "react native component",
+    "material ui chip input"
+  ],
+  "author": "Gayathri Perumal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gayathri-perumal/react-native-chip-input/issues"
+  },
+  "homepage": "https://github.com/gayathri-perumal/react-native-chip-input#readme",
+  "peerDependencies": {
+    "react": "^16.13.0",
+    "react-native": "^0.61.5",
+    "react-native-vector-icons": "^6.6.0"
+  }
+}
