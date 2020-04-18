@@ -1,4 +1,4 @@
-import React, {useState, createRef} from 'react';
+import React, {useState} from 'react';
 import {View, Text, TextInput, TouchableOpacity, StyleSheet} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
@@ -147,6 +147,9 @@ type Props = {
     inputTextStyle: *,
     placeholderStyle: *,
     chipIconAction: *,
+    primaryColor: string,
+    secondaryColor: string,
+    iconName: string, 
 }
 
 const ReactNativeChipInput = (props: Props) => {
