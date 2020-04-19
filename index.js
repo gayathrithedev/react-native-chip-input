@@ -1,5 +1,12 @@
 import React, {useState} from 'react';
-import {View, Text, TextInput, TouchableOpacity, StyleSheet} from 'react-native';
+import {
+    View,
+    Text, 
+    TextInput, 
+    TouchableOpacity, 
+    StyleSheet,
+    Keyboard,
+} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 
@@ -138,7 +145,7 @@ const styles = (primaryColor, secondaryColor, variant) => StyleSheet.create({
 });
 
 type Props = {
-    showRemoveIcon: boolean,
+    showChipIcon: boolean,
     chipVariant: chipVariant,
     enableBackspaceDelete: boolean,
     size: chipSize,
@@ -154,7 +161,7 @@ type Props = {
 
 const ReactNativeChipInput = (props: Props) => {
     const {
-        showRemoveIcon,
+        showChipIcon,
         variant,
         size,
         inputVariant,
@@ -255,6 +262,9 @@ const ReactNativeChipInput = (props: Props) => {
     }
 
     const onDoneButtonPress = async() => {
+        if(currentInputValue === null){
+            Keyboard.dismiss();
+        }
         if(currentInputValue !== null && inputValues.length === 0) {
             await setInputValues([...inputValues, currentInputValue]);
             setCurrentInputValue(null);
@@ -294,7 +304,7 @@ const ReactNativeChipInput = (props: Props) => {
                         >
                             <Text style={[getChipTextStyle(size), themedStyles.chipText]}>{value}</Text>
                             {
-                                showRemoveIcon ? (
+                                showChipIcon ? (
                                     <TouchableOpacity
                                         style={[
                                             getIconStyleWrapper(variant),

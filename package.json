@@ -1,6 +1,6 @@
 {
   "name": "react-native-chip-input",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is like material-ui-chip-input for react native",
   "main": "index.js",
   "scripts": {
